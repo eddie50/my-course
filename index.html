@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Frontend Bootcamp</title>
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">دوره جامع برنامه نویسی</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">مباحثی که می آموزید</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">سوالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">راهنمایی</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <!--ShowCase-->
+    <section class="bg-dark text-light p-5 p-lg-1 pt-lg-5 text-center text-sm-end">
+        <div class="container">
+            <div class="d-sm-flex align-items-center jusify-content-between">
+                <div>
+                    <h1> یک <span class="text-warning">برنامه نویس</span> شوید</h1>
+                    <p class="lead my-4">شما در این دوره به مستری کامل فرانت اند خواهید رسید و خواهید توانست انواع وبسایت را به راحتی تولید کنید(زیر نظر مهدی کمالی)</p>
+                    <button class="btn btn-primary btn-lg">شروع دوره</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--News letter-->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center newss-new">
+
+                <div class="input-group news-input">
+                    <button class="btn btn-dark btn-lg" type="button">ثبت</button>
+                    <input type="text" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                </div>
+                <h3 class="mb-3 mb-md-0">برای دریافت آخرین اخبار عضو شوید </h3>
+
+                
+                              
+            </div>
+        </div>
+    </section>
+
+    <!--Boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi-laptop"></i></div> 
+                            <h4 class="card-title mb-3">
+                                مجازی
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, provident.
+                            </p>
+                            <a href="#" class="btn btn-primary">...ادامه</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi-person-square"></i></div> 
+                            <h4 class="card-title mb-3">
+                                مشاوره
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, provident.
+                            </p>
+                            <a href="#" class="btn btn-dark">...ادامه</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"><i class="bi-people"></i></div> 
+                            <h4 class="card-title mb-3">
+                               دانشجویان برگزیده
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, provident.
+                            </p>
+                            <a href="#" class="btn btn-primary">...ادامه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--learn Sections-->
+
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row -align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/fundamentals.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2 style="text-align: right;margin-bottom: 1em;">مبانی برنامه نویسی را با ما بیاموزید</h2>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, fuga. Ducimus, nemo nihil. Vero, expedita! Quibusdam excepturi accusantium rem, sapiente ad quidem cumque laboriosam est amet, vero quos, iusto modi?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum distinctio voluptatibus quidem iusto perferendis culpa quam ab qui asperiores, explicabo molestias neque modi dolorum minima ex sequi veniam officiis!</p>
+                    <a href="#" class="btn btn-dark mt-3">...بیشتر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row -align-items-center justify-content-between">
+                
+                <div class="col-md p-5 ">
+                    <h2 style="text-align: right;margin-bottom: 1em;">ری اکت را بیاموزید</h2>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, fuga. Ducimus, nemo nihil. Vero, expedita! Quibusdam excepturi accusantium rem, sapiente ad quidem cumque laboriosam est amet, vero quos, iusto modi?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum distinctio voluptatibus quidem iusto perferendis culpa quam ab qui asperiores, explicabo molestias neque modi dolorum minima ex sequi veniam officiis!</p>
+                    <a href="#" class="btn btn-light mt-3">...بیشتر</a>
+                </div>
+                <div class="col-md">
+                    <img src="img/react.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Question Accordion-->
+
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">سوالات پر تکرار</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" >
+                      روش آموزش چگونه است؟
+                    </button>
+                  </h2>
+                  <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a corporis explicabo incidunt aspernatur accusamus! Dolore quos nobis quae laudantium doloribus repellat, nam officia unde. Eum neque consequatur officiis veniam!</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" >
+                        پشتیبانی به چه صورت است؟
+                      </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a corporis explicabo incidunt aspernatur accusamus! Dolore quos nobis quae laudantium doloribus repellat, nam officia unde. Eum neque consequatur officiis veniam!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" >
+                        هزینه ی عضویت چقدر است؟
+                      </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                      <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ex quod consequuntur debitis architecto pariatur incidunt expedita sint odio! Sapiente, exercitationem voluptates, cupiditate voluptate numquam tenetur doloribus molestias alias maxime laborum soluta accusantium esse, repudiandae at mollitia! Delectus explicabo tenetur impedit vitae enim, culpa unde molestiae harum ipsa autem. Soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a corporis explicabo incidunt aspernatur accusamus! Dolore quos nobis quae laudantium doloribus repellat, nam officia unde. Eum neque consequatur officiis veniam!</div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">مدرسان</h2>
+            <p class="lead text-center text-white mb-5">
+                اساتید ما دارای سال ها تجربه در انواع زمینه های فرانت اند هستند
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="" class="rounded-circle mb-3">
+                            <h4 class="card-title mb-3"> ملیکا جباری </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio, voluptas est iusto vero temporibus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="" class="rounded-circle mb-3">
+                            <h4 class="card-title mb-3">امیر حسین سرافراز</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio, voluptas est iusto vero temporibus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="" class="rounded-circle mb-3">
+                            <h4 class="card-title mb-3">زهرا حاتمی</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio, voluptas est iusto vero temporibus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="" class="rounded-circle mb-3">
+                            <h4 class="card-title mb-3">مهدی کمالی</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio, voluptas est iusto vero temporibus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact & Map-->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">اطلاعات تماس</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">آدرس اصلی :</span> شاهرود خیابان 22 بهمن
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">تلفن شرکت :</span> 0233158957
+                        </li>
+                        <li class="list-group-item">
+                            mehka7798@gmail.com<span class="fw-bold ">: آدرس ایمیل</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">تلفن همراه :</span> 0914 692 3307
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md">
+                    <div id="map">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXJzaGZhcmhhZCIsImEiOiJja3lyZnRkdWcwdDZnMndvN3FtYzI0bm1yIn0.BFomVJnTaeaUtTIWhZHAaw';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

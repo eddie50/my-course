@@ -1,0 +1,24 @@
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+
+}
+
+@media (min-width:768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+@media (max-width:768px) {
+    .newss-new{
+        display: flex;
+        flex-direction: column-reverse;
+        -ms-flex-item-align: end;
+    }
+
+    
+}
+h3{
+    text-align: right;
+}
